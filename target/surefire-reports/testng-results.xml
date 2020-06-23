@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="8" passed="8" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-06-03T16:14:15Z" name="Suite" finished-at="2020-06-03T16:14:37Z" duration-ms="22116">
+    <groups>
+      <group name="Reg">
+        <method signature="Test123.AlertCheck(java.lang.String)[pri:0, instance:com.main.Test123@456d6c1e]" name="AlertCheck" class="com.main.Test123"/>
+        <method signature="Test123.AutoSuggesstions()[pri:0, instance:com.main.Test123@456d6c1e]" name="AutoSuggesstions" class="com.main.Test123"/>
+        <method signature="Test123.paramTest(java.lang.String)[pri:0, instance:com.main.Test123@456d6c1e]" name="paramTest" class="com.main.Test123"/>
+      </group> <!-- Reg -->
+      <group name="Smoke">
+        <method signature="App.shouldAnswerWithTrue()[pri:0, instance:com.main.App@163370c2]" name="shouldAnswerWithTrue" class="com.main.App"/>
+        <method signature="Test123.CheckBox()[pri:0, instance:com.main.Test123@456d6c1e]" name="CheckBox" class="com.main.Test123"/>
+        <method signature="Test123.paramTest(java.lang.String)[pri:0, instance:com.main.Test123@456d6c1e]" name="paramTest" class="com.main.Test123"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test started-at="2020-06-03T16:14:15Z" name="DemoTest" finished-at="2020-06-03T16:14:37Z" duration-ms="22116">
+      <class name="com.main.App">
+        <test-method signature="shouldAnswerWithTrue()[pri:0, instance:com.main.App@163370c2]" started-at="2020-06-03T21:44:18Z" name="shouldAnswerWithTrue" finished-at="2020-06-03T21:44:18Z" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldAnswerWithTrue -->
+      </class> <!-- com.main.App -->
+      <class name="com.main.Test123">
+        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:com.main.Test123@456d6c1e]" started-at="2020-06-03T21:44:15Z" name="initializeDriver" finished-at="2020-06-03T21:44:18Z" duration-ms="3467" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriver -->
+        <test-method signature="AlertCheck(java.lang.String)[pri:0, instance:com.main.Test123@456d6c1e]" started-at="2020-06-03T21:44:18Z" name="AlertCheck" data-provider="getAlertName" finished-at="2020-06-03T21:44:24Z" duration-ms="5759" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Nami]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AlertCheck -->
+        <test-method signature="AlertCheck(java.lang.String)[pri:0, instance:com.main.Test123@456d6c1e]" started-at="2020-06-03T21:44:24Z" name="AlertCheck" data-provider="getAlertName" finished-at="2020-06-03T21:44:26Z" duration-ms="1747" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Shiv]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AlertCheck -->
+        <test-method signature="AutoSuggesstions()[pri:0, instance:com.main.Test123@456d6c1e]" started-at="2020-06-03T21:44:26Z" name="AutoSuggesstions" finished-at="2020-06-03T21:44:30Z" duration-ms="4085" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AutoSuggesstions -->
+        <test-method signature="CheckBox()[pri:0, instance:com.main.Test123@456d6c1e]" started-at="2020-06-03T21:44:30Z" name="CheckBox" finished-at="2020-06-03T21:44:32Z" duration-ms="1689" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckBox -->
+        <test-method signature="CheckBox()[pri:0, instance:com.main.Test123@456d6c1e]" started-at="2020-06-03T21:44:32Z" name="CheckBox" finished-at="2020-06-03T21:44:33Z" duration-ms="1782" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckBox -->
+        <test-method signature="CheckBox()[pri:0, instance:com.main.Test123@456d6c1e]" started-at="2020-06-03T21:44:33Z" name="CheckBox" finished-at="2020-06-03T21:44:35Z" duration-ms="1554" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckBox -->
+        <test-method signature="paramTest(java.lang.String)[pri:0, instance:com.main.Test123@456d6c1e]" started-at="2020-06-03T21:44:35Z" name="paramTest" finished-at="2020-06-03T21:44:36Z" duration-ms="1189" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[SP_Test]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- paramTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.main.Test123@456d6c1e]" started-at="2020-06-03T21:44:36Z" name="tearDown" finished-at="2020-06-03T21:44:37Z" duration-ms="825" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.main.Test123 -->
+    </test> <!-- DemoTest -->
+  </suite> <!-- Suite -->
+</testng-results>

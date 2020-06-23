@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Suite" parallel="none" >
+<parameter name="Name" value="NK_Suite"/>
+
+<listeners>
+<listener class-name="com.main.ListenerClass"></listener>
+</listeners>
+ 
+  <test thread-count="5" name="ChromeTest">
+  
+  <parameter name="Name" value="SP_Test"/>
+  
+  <groups>
+  	<define name ="RUNALL">
+  		<include name = "Smoke"/>
+  		<include name = "Reg"/>
+  	</define>
+  
+  <run>
+		<include name="RUNALL"/>
+  </run>
+  </groups>
+  
+    <classes>
+      <class name="com.main.App"/>
+      <class name="com.main.Test123"/>
+    </classes>
+  </test> <!-- ChromeTest -->
+  
+  <test thread-count="5" name="FirefoxTest">
+  
+  <parameter name="Name" value="SP_Test"/>
+  
+  <groups>
+  	<define name ="RUNALL">
+  		<include name = "Smoke"/>
+  		<include name = "Reg"/>
+  	</define>
+  
+  <run>
+		<exclude name="RUNALL"/>
+  </run>
+  </groups>
+  
+    <classes>
+      <class name="com.main.App"/>
+      <class name="com.main.FirefoxTest"/>
+    </classes>
+  </test> <!-- FirefoxTest -->
+</suite> <!-- Suite -->

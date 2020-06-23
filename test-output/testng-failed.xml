@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Suite]">
+  <parameter name="Name" value="SP_Test"/>
+  <listeners>
+    <listener class-name="com.main.ListenerClass"/>
+  </listeners>
+  <test parallel="none" name="ChromeTest(failed)">
+    <parameter name="Name" value="SP_Test"/>
+    <groups>
+      <run>
+        <include name="RUNALL"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.main.Test123">
+        <methods>
+          <include name="CheckBox"/>
+          <include name="initializeDriver"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.main.Test123 -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
